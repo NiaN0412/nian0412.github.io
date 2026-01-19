@@ -24,22 +24,20 @@ export const siteConfig = {
   },
 }
 
-// 關鍵字標籤（首頁展示用）
+// 關鍵字標籤（SEO 與首頁展示用）
 export const keywords = [
+  'q_nnn412',
+  '嚴郁琇',
+  'DLLM',
+  'Diffusion Model',
+  'Large Language Model',
+  'Next.js',
+  'Tailwind CSS',
   'TypeScript',
-  'React',
-  'Philosophy',
-  'Writing',
-]
-
-// 友站列表
-export const friendSites = [
-  {
-    name: 'HackIt',
-    url: 'https://hackit.tw',
-    description: '延伸互動場域，社群節點',
-  },
-  // 在此添加更多友站...
+  'Sakura Cloud',
+  '技術隨筆',
+  '個人網站',
+  '自學開發者',
 ]
 
 // 經歷時間軸
