@@ -3,6 +3,14 @@ import './globals.css'
 export const metadata = {
   title: 'q_nnn412 | Q的狗窩',
   description: '留下思考痕跡的入口',
+  icons: {
+    icon: [
+      {
+        url: '/qnnn412.png',
+        href: '/qnnn412.png',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({
