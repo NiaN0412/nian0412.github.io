@@ -19,6 +19,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.repository == 'NiaN0412/nian0412.github.io'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
