@@ -43,8 +43,25 @@
   },
   "journey": {
     "title": "Journey",
-    "subtitle": "Trajectories of choices, not linear growth",
-    "description": "What's shown is turning points, not accumulation. Understanding why I've arrived at where I am now."
+    "subtitle": "Trajectory of choices, shaped by curiosity rather than rigid paths.",
+    "description": "Each turn has its meaning; these scattered dots eventually pieced together who I am today.",
+    "stages": {
+      "silent": {
+        "period": "2023 – 2024",
+        "title": "Finding Silence to Recalibrate",
+        "content": "During high school, the pressures of systems and expectations made me realize I didn't belong on the set tracks. I chose to step back and ask: 'If existing paths don't work, can I build my own?' In that near-blank silence, I buried myself in programming and model structures—not for school, but to reclaim choice over my own life."
+      },
+      "turning": {
+        "period": "2025 Turning Point",
+        "title": "From User to Architect",
+        "content": "I decided not to take shortcuts. While others called APIs, I dove into DLLM (Diffusion LLM) papers. The denoising mechanisms and architectures fascinated me more than the tools themselves. I realized that what's scarce isn't users, but the courage to understand fundamentals. This marked my shift from self-taught to storyteller."
+      },
+      "expansion": {
+        "period": "2025 Expansion",
+        "title": "CEO of My Own Life",
+        "content": "A declaration of learning autonomy. I started sharing deep tech content and growing a community to show that technology isn't just cold proof—it's a medium for dialogue. My story is still being written, and while it's slow, my coordinates are now crystal clear."
+      }
+    }
   },
   "contact": {
     "title": "Contact",
