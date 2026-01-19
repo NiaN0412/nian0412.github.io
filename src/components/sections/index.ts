@@ -1,0 +1,6 @@
+export { HeroSection } from './HeroSection'
+export { BlogSection } from './BlogSection'
+export { PartnerSection } from './PartnerSection'
+export { FriendsSection } from './FriendsSection'
+export { JourneySection } from './JourneySection'
+export { ContactSection } from './ContactSection'

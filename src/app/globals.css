@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: 'Noto Sans TC', 'Noto Sans JP', system-ui, sans-serif;
+    --font-serif: 'Noto Serif TC', 'Noto Serif JP', Georgia, serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+    
+    /* 白金冷調 CSS 變數 */
+    --color-bg: #f8f9fb;
+    --color-bg-alt: #f1f3f6;
+    --color-surface: #ffffff;
+    --color-border: #e2e6ec;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-platinum-50 text-platinum-800 relative;
+    @apply antialiased;
+    @apply transition-colors duration-300;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: 
+      linear-gradient(to right, rgba(148, 163, 184, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148, 163, 184, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(ellipse at center, black, transparent 90%);
+    pointer-events: none;
+  }
+
+  /* 裝飾性的小圓點網格 */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: radial-gradient(rgba(148, 163, 184, 0.2) 1px, transparent 1px);
+    background-size: 20px 20px;
+    mask-image: radial-gradient(ellipse at center, black, transparent 80%);
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  .dark body::before {
+    background-image: 
+      linear-gradient(to right, rgba(234, 179, 8, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(234, 179, 8, 0.05) 1px, transparent 1px);
+  }
+
+  .dark body::after {
+    background-image: radial-gradient(rgba(234, 179, 8, 0.1) 1px, transparent 1px);
+  }
+
+  /* 日系極簡選取樣式 */
+  ::selection {
+    @apply bg-platinum-200;
+  }
+
+  /* 自訂捲軸 */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-platinum-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-platinum-400;
+  }
+}
+
+@layer components {
+  /* 區塊共用樣式 */
+  .section {
+    @apply min-h-screen py-20 px-6 md:px-12 lg:px-20;
+    @apply flex flex-col justify-center;
+  }
+
+  .section-inner {
+    @apply max-w-4xl mx-auto w-full;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-light tracking-wide;
+    @apply text-platinum-800;
+    @apply mb-2;
+  }
+
+  .section-subtitle {
+    @apply text-lg md:text-xl font-light;
+    @apply text-platinum-500;
+    @apply mb-8;
+  }
+
+  .section-description {
+    @apply text-base md:text-lg leading-relaxed;
+    @apply text-platinum-600;
+  }
+
+  /* 連結樣式 - 金色點綴的白金冷調 */
+  .link-subtle {
+    @apply text-platinum-500;
+    @apply hover:text-gold-600;
+    @apply transition-colors duration-200;
+    @apply underline underline-offset-4 decoration-gold-300/50;
+    @apply hover:decoration-gold-400;
+  }
+
+  /* 卡片樣式 - 白金冷調 */
+  .card {
+    @apply p-6 rounded-xl;
+    @apply bg-white/80;
+    @apply border border-platinum-200;
+    @apply backdrop-blur-sm;
+    @apply transition-all duration-200;
+  }
+
+  .card:hover {
+    @apply border-gold-300/50;
+    @apply shadow-lg shadow-gold-200/20;
+  }
+
+  /* 標籤樣式 - 金色點綴 */
+  .tag {
+    @apply inline-block px-3 py-1 rounded-full text-sm;
+    @apply bg-gold-50;
+    @apply text-platinum-600;
+    @apply border border-gold-200/50;
+  }
+
+  /* 金色強調文字 */
+  .text-accent {
+    @apply text-gold-600;
+  }
+
+  /* 金色裝飾線 */
+  .gold-line {
+    @apply h-px bg-gradient-to-r from-transparent via-gold-300 to-transparent;
+  }
+}
+
+@layer utilities {
+  /* 淡入動畫 */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  /* 延遲動畫 */
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+}

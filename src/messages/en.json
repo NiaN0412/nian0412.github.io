@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "q_nnn412 | Q's Doghouse",
+    "description": "An entrance to traces of thought"
+  },
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "partner": "Partner",
+    "friends": "Friends",
+    "journey": "Journey",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Q",
+    "tagline": "An entrance to traces of thought",
+    "description": "Between technology and humanities, finding ways to understand the world."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Thoughts may not be mature, but worth preserving",
+    "description": "What's presented here is the process of thinking, not conclusions or tutorials. Some articles may be incomplete, some views may be outdated, but still valuable for reference.",
+    "readMore": "Read more",
+    "emptyState": "No articles yet"
+  },
+  "partner": {
+    "title": "Partner",
+    "subtitle": "The other side of life",
+    "description": "{days} days, or {hours} hours when converted.\n\nBut what truly moves the heart has never been the numbers themselves,\nbut the moments strung together by them:\n\nthe first time we talked until dawn in a late-night cafe,\nthe first time we captured each other's most defenseless profiles on film,\nthe first time we walked hand-in-hand through the whole city in the cold wind,\nand the first time we listened to the same song together, neither saying a word, just quietly shedding tears.\n\nWe never thought about writing love into an epic;\nwe just simply thought:\nevery day with you is worth being recorded well.\n\nSo just like that, day by day, it has accumulated into {days} days,\nand also into the warmest title: 『{person2}』.",
+    "person1": "q_nnn412",
+    "person2": "kindle1126",
+    "daysTogether": "Days Together",
+    "days": "days",
+    "milestones": "Milestones",
+    "anniversary": "Anniversary",
+    "interests": "Common Interests",
+    "quote": "There is a person to experience daily life with."
+  },
+  "friends": {
+    "title": "Friends",
+    "subtitle": "Who I stand with defines who I am",
+    "description": "Friend links are a form of 'decentralized self-introduction'. These are the people and sites I choose to resonate with."
+  },
+  "journey": {
+    "title": "Journey",
+    "subtitle": "Trajectories of choices, not linear growth",
+    "description": "What's shown is turning points, not accumulation. Understanding why I've arrived at where I am now."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "If you want to continue the conversation, here I am",
+    "description": "No pressure to act, no implied promises.",
+    "elsewhere": "You can also find me here"
+  },
+  "common": {
+    "scrollDown": "Scroll to explore"
+  }
+}
