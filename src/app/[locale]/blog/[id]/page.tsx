@@ -3,9 +3,23 @@ import Link from 'next/link'
 import { ChevronLeft, Calendar, Tag, Clock } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import { setRequestLocale } from 'next-intl/server'
 import { posts } from '@/lib/blog'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import { locales } from '@/i18n/config'
+
+export function generateStaticParams() {
+  const params: { locale: string; id: string }[] = []
+
+  locales.forEach((locale) => {
+    posts.forEach((post) => {
+      params.push({ locale, id: post.id })
+    })
+  })
+
+  return params
+}
 
 interface BlogPageProps {
   params: {
@@ -15,6 +29,7 @@ interface BlogPageProps {
 }
 
 export default function BlogPage({ params: { locale, id } }: BlogPageProps) {
+  setRequestLocale(locale)
   const post = posts.find((p) => p.id === id)
 
   if (!post) {
