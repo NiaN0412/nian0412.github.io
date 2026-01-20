@@ -10,17 +10,24 @@ const partnerData = {
   startDate: '2025-12-15', // 開始日期
   avatar1: '/qnnn412.png',
   avatar2: '/kindle.png',
-  milestones: [
-    { date: '2025-09-27', title: '緣分的開始', icon: <Sparkles className="w-4 h-4" /> },
-    { date: '2025-12-31', title: '台北永春跨年', icon: <Calendar className="w-4 h-4" /> },
-  ],
-  interests: ['拉麵', '電影', '旅遊', '音樂'],
 }
 
 export function PartnerSection() {
   const t = useTranslations('partner')
   const [days, setDays] = useState(0)
   const [hours, setHours] = useState(0)
+
+  const milestones = [
+    { date: '2025-09-27', title: t('milestones_list.m1'), icon: <Sparkles className="w-4 h-4" /> },
+    { date: '2025-12-31', title: t('milestones_list.m2'), icon: <Calendar className="w-4 h-4" /> },
+  ]
+
+  const interests = [
+    t('interests_list.i1'),
+    t('interests_list.i2'),
+    t('interests_list.i3'),
+    t('interests_list.i4'),
+  ]
 
   useEffect(() => {
     const start = new Date(partnerData.startDate)
@@ -160,7 +167,7 @@ export function PartnerSection() {
                 {t('milestones')}
               </h3>
               <div className="space-y-3">
-                {partnerData.milestones.map((milestone, index) => (
+                {milestones.map((milestone, index) => (
                   <div key={index} className="flex items-center gap-4 p-4 rounded-xl bg-surface border border-platinum-200/50 dark:border-platinum-800/50 shadow-sm">
                     <div className="w-10 h-10 rounded-lg bg-gold-50 dark:bg-gold-900/20 flex items-center justify-center text-gold-500">
                       {milestone.icon}
@@ -187,7 +194,7 @@ export function PartnerSection() {
                 {t('interests')}
               </h3>
               <div className="flex flex-wrap gap-2">
-                {partnerData.interests.map((interest) => (
+                {interests.map((interest) => (
                   <span
                     key={interest}
                     className="px-4 py-2 rounded-full text-sm bg-platinum-100 dark:bg-platinum-800/50 text-platinum-600 dark:text-platinum-300 border border-platinum-200/50 dark:border-platinum-700/30 hover:border-gold-300/50 transition-colors"
@@ -202,11 +209,11 @@ export function PartnerSection() {
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 rounded-xl border border-platinum-100 dark:border-platinum-800/30 flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-platinum-400" />
-                <span className="text-xs text-platinum-500">2 個造訪城市</span>
+                <span className="text-xs text-platinum-500">{t('visited_cities', { count: 2 })}</span>
               </div>
               <div className="p-4 rounded-xl border border-platinum-100 dark:border-platinum-800/30 flex items-center gap-3">
                 <Music className="w-4 h-4 text-platinum-400" />
-                <span className="text-xs text-platinum-500">12 首共同歌單</span>
+                <span className="text-xs text-platinum-500">{t('shared_songs', { count: 12 })}</span>
               </div>
             </div>
           </div>

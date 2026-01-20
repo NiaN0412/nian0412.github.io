@@ -5,6 +5,7 @@ import { Github, Instagram, Mail } from 'lucide-react'
 import { siteConfig } from '@/config/site'
 
 export function Footer() {
+  const t = useTranslations('footer')
   const currentYear = new Date().getFullYear()
 
   return (
@@ -20,7 +21,7 @@ export function Footer() {
               {siteConfig.name}
             </h3>
             <p className="text-sm text-platinum-400 dark:text-platinum-500 italic">
-              「在技術與生活之間，留下曾經認真思考過的痕跡。」
+              {t('quote')}
             </p>
           </div>
 
@@ -73,7 +74,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="px-4 py-2 rounded-full border border-platinum-200 dark:border-platinum-800 text-platinum-500 hover:text-gold-500 hover:border-gold-500/50 transition-all duration-300"
             >
-              加入我們
+              {t('join_us')}
             </a>
           </div>
         </div>

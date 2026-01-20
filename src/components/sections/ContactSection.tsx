@@ -94,16 +94,18 @@ export function ContactSection() {
           className="mt-16 text-center"
         >
           <p className="text-sm text-platinum-400 dark:text-platinum-500">
-            你也可以在{' '}
-            <a
-              href="https://www.sakura-cloud.tw/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-subtle"
-            >
-              Sakura-Cloud
-            </a>
-            {' '}繼續看到我
+            {t.rich('community_text', {
+              link: (chunks) => (
+                <a
+                  href="https://www.sakura-cloud.tw/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-subtle"
+                >
+                  {chunks}
+                </a>
+              )
+            })}
           </p>
         </motion.div>
       </div>

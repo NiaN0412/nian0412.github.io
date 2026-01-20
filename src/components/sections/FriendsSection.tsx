@@ -10,27 +10,26 @@ interface FriendSite {
   description: string
 }
 
-// 友站資料
-const friendSites: FriendSite[] = [
-  {
-    name: 'kindle1126',
-    url: 'https://kindle1126.xyz/',
-    description: '一個對演算法最優解有著莫名執著的 17 歲少年。從機器人競賽到各種腦洞大開的小專案，他編織出的數位世界總是充滿活力。',
-  },
-  {
-    name: 'twcat0503',
-    url: 'https://twcat0503.org/',
-    description: '我最可靠的競賽隊友，來自永春數位實驗班的高手。他擅長將發想與創意結合，把那些改變生活的點子具現化。',
-  },
-  {
-    name: '南宮柳信',
-    url: 'https://nangong5421.com/',
-    description: '技術深度驚人的「電神」，將開發視為一種修行的藝術。他的數位園林不僅有精準的邏輯，更有著追求極致的克制美學。',
-  },
-]
-
 export function FriendsSection() {
   const t = useTranslations('friends')
+
+  const friendSites: FriendSite[] = [
+    {
+      name: t('site_names.kindle1126'),
+      url: 'https://kindle1126.xyz/',
+      description: t('sites.kindle1126'),
+    },
+    {
+      name: t('site_names.twcat0503'),
+      url: 'https://twcat0503.org/',
+      description: t('sites.twcat0503'),
+    },
+    {
+      name: t('site_names.nangong'),
+      url: 'https://nangong5421.com/',
+      description: t('sites.nangong'),
+    },
+  ]
 
   return (
     <section id="friends" className="section bg-frost-50/80 dark:bg-platinum-900/50 backdrop-blur-sm">

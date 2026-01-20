@@ -34,12 +34,34 @@
     "milestones": "Milestones",
     "anniversary": "Anniversary",
     "interests": "Common Interests",
-    "quote": "There is a person to experience daily life with."
+    "quote": "There is a person to experience daily life with.",
+    "milestones_list": {
+      "m1": "The beginning of our story",
+      "m2": "New Year's Eve at Yongchun, Taipei"
+    },
+    "interests_list": {
+      "i1": "Ramen",
+      "i2": "Movies",
+      "i3": "Travel",
+      "i4": "Music"
+    },
+    "visited_cities": "{count} visited cities",
+    "shared_songs": "{count} shared songs"
   },
   "friends": {
     "title": "Friends",
     "subtitle": "Who I stand with defines who I am",
-    "description": "Friend links are a form of 'decentralized self-introduction'. These are the people and sites I choose to resonate with."
+    "description": "Friend links are a form of 'decentralized self-introduction'. These are the people and sites I choose to resonate with.",
+    "site_names": {
+      "kindle1126": "kindle1126",
+      "twcat0503": "twcat0503",
+      "nangong": "Nangong"
+    },
+    "sites": {
+      "kindle1126": "A 17-year-old boy with a strange obsession with optimal algorithm solutions. From robotics competitions to various imaginative small projects, the digital world he weaves is always full of energy.",
+      "twcat0503": "My most reliable competition teammate, an expert from the Yongchun Digital Experimental Class. He excels at combining ideas with creativity to materialize concepts that change lives.",
+      "nangong": "A 'Tech God' with amazing technical depth, treating development as an art of cultivation. His digital garden has not only precise logic but also a restrained aesthetic that pursues the ultimate."
+    }
   },
   "journey": {
     "title": "Journey",
@@ -67,7 +89,12 @@
     "title": "Contact",
     "subtitle": "If you want to continue the conversation, here I am",
     "description": "No pressure to act, no implied promises.",
-    "elsewhere": "You can also find me here"
+    "elsewhere": "You can also find me here",
+    "community_text": "You can also continue to find me at <link>Sakura-Cloud</link>"
+  },
+  "footer": {
+    "quote": "\"Leaving traces of serious thought between technology and life.\"",
+    "join_us": "Join Us"
   },
   "common": {
     "scrollDown": "Scroll to explore"
