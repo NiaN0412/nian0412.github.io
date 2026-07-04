@@ -158,6 +158,7 @@ export const posts: BlogPost[] = [
 
 > 世界的生成機制，可能根本不在你的分類表裡。
   },
+  
   {
     id: 'tech-values',
     title: '技術選擇背後的價值觀',
